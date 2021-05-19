@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    var arr = [1, 2, 33, 5, 7, 8];
+    var max = arr[0];
+    var index = 0;
+    var tong = 0;
+    var avg = 0;
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] >= max) {
+            max = arr[i];
+            index = i;
+        }
+        tong += arr[i];
+    }
+    avg = Math.round((tong / arr.length) * 100) / 100;
+    document.write("Max = " + max + " Tại vị trí: " + index + "<br>");
+    document.write("Giá trị trung bình là : " + avg);
+</script>
+</body>
+</html>

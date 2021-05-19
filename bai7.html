@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<script>
+    var arr = [];
+    var arrLength = parseInt(prompt("Nhập chiều dài của mảng: "));
+    var i = 0;
+    index = 0;
+    while (i < arrLength) {
+        var add = parseInt(prompt("Nhập giá trị vào mảng"));
+        arr.push(add);
+        i++;
+    }
+    var nhapV = parseInt(prompt("Nhập giá trị cần tìm: "));
+    for (var j = 0; j < arr.length; j++) {
+        if (nhapV == arr[j]) {
+            console.log(j);
+            arr.splice(j, 1);
+        }
+    }
+    console.log(arr)
+</script>
+</body>
+</html>

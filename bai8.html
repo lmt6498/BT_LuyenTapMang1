@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+<script>
+    var arr = [];
+    var arrLength = parseInt(prompt("Nhập chiều dài của mảng: "));
+    var i = 0;
+    index = 0;
+    while (i < arrLength) {
+        var add = parseInt(prompt("Nhập giá trị vào mảng"));
+        arr.push(add);
+        i++;
+    }
+    document.write("Mảng ban đầu: " + arr + "<br>");
+    var sapXep = arr.sort(function (a, b) {
+        return b - a
+    });
+    document.write("Mảng sau khi sắp xếp giảm dần: " + sapXep);
+</script>
+</body>
+</html>

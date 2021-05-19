@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+<script>
+  var arr1 = [];
+  var arr2 = [];
+
+  var arrLength1 = parseInt(prompt("Nhập chiều dài của mảng 1: "));
+  var i = 0;
+  index1 = 0;
+  while (i < arrLength1) {
+    var add1 = parseInt(prompt("Nhập giá trị vào mảng 1: "));
+    arr1.push(add1);
+    i++;
+  }
+  var arrLength2 = parseInt(prompt("Nhập chiều dài của mảng 2: "));
+  var j = 0;
+  index2 = 0;
+  while (j < arrLength2) {
+    var add2 = parseInt(prompt("Nhập giá trị vào mảng 2: "));
+    arr2.push(add2);
+    j++;
+  }
+  var arr3 = arr1.concat(arr2);
+  console.log(arr1);
+  console.log(arr2);
+  console.log(arr3);
+</script>
+</body>
+</html>
